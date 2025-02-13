@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valentine's Day Flip Book</title>
+    <link rel="stylesheet" href="styl.css" />
+  </head>
+
+  <body>
+    <div id="hedlinecontainer">
+      <div id="shine">Happy Valentine's Day Dummu💞</div>
+    </div>
+    <div class="message">
+      <p>
+        You are the best thing that ever happened to me. Thank you for being my
+        everything! 😘
+      </p>
+    </div>
+
+    <audio id="bg-music" autoplay loop>
+      <source src="music/music.mp3" type="audio/mp3" />
+      Your browser does not support the audio tag.
+    </audio>
+
+    <script>
+      document.addEventListener(
+        "click",
+        () => {
+          const audio = document.getElementById("bg-music");
+          if (audio.paused) {
+            audio.play();
+          }
+        },
+        {
+          once: true,
+        }
+      ); // Ensures it runs only once
+    </script>
+
+    <div class="gallery">
+      <img
+        src="images/IMG-20250213-WA0002.jpg"
+        alt="a lovely kiss in the night"
+      />
+      <img src="images/IMG-20250213-WA0003.jpg" alt="a women inside a car" />
+      <img src="images/IMG-20250213-WA0004.jpg" alt="a baby" />
+      <img src="images/IMG-20250213-WA0001.jpg" alt="a girl in the forest" />
+      <img src="images/IMG-20250213-WA0005.jpg" alt="a girl" />
+      <img src="images/IMG-20250213-WA0007.jpg" alt="a girl" />
+      <img src="images/IMG-20250213-WA0008.jpg" alt="a girl" />
+      <img src="images/IMG-20250213-WA0009.jpg" alt="a girl" />
+      <img src="images/IMG-20250213-WA0010.jpg" alt="a girl" />
+    </div>
+  </body>
+</html>
